@@ -51,8 +51,6 @@ to perepare the parameters and then to prapare for modeling'''
 
 '''There are 4 recipes for data pre-processing'''
 
-# 1. Rescale data 
-#       - minmaxscaler class to a range between 0 and 1
 
 
 
@@ -74,8 +72,8 @@ array = data.values #THIS MAKES A PANDA BACK INTO A NORMAL 2D ARRAY
 X = array[:,0:8]    #inputs
 Y = array[:,8]      #outputs
 
-
-
+# 1. Rescale data 
+#       - minmaxscaler class to a range between 0 and 1
 
 
 scaler1 = MinMaxScaler(feature_range=(0,1))
